@@ -99,6 +99,15 @@ function draw_img() {
 	<p>Canvas time!</p>
 	
 	<p> <center> <canvas id="a" width="300" height="225" style="border:1px solid #000000;"></canvas> </center> </p>
+	<script>
+		  var a_canvas = document.getElementById("a");
+  		var a_context = a.getContext("2d");
+		var gradient = context.createLinearGradient(0, 0, 300, 0);
+		gradient.addColorStop(0, "green");
+		gradient.addColorStop(1, "white");
+		context.fillStyle = gradient
+  		context.fillRect(50, 50, 150, 100);	
+	</script>
 	
 	<a onclick="draw_square();" class="w3-btn w3-blue w3-round-xxlarge">Rectangle</a>
 		
