@@ -17,10 +17,12 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+The goal of this code is to create a website with a canvas and boarder. 
+The app should include 4 buttons that, when pressed, draws a rectangle, shows your name, loads an image, and clears the canvas, respectively. 
+We will continue to expand our knowledge of coding by learning new techniques, navigating Javascript, HTML, and CS, as well as larning to better troubleshoot issues within code.
  
 Known Issues:
-blah, blah, blah, blah
+-----
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -38,7 +40,33 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
+	
+function draw_b() {
+  var a_canvas = document.getElementById("a");
+  var a_context = a_canvas.getContext("2d");
+var my_gradient = context.createLinearGradient(0, 0, 300, 0);
+my_gradient.addColorStop(0, "green");
+my_gradient.addColorStop(1, "blue");
+  b_context.fillRect(50, 25, 150, 100);
+	
+	context.font = "bold 12px sans-serif";
+	context.fillText("x", 248, 43);
+	context.fillText("y", 58, 165);
+}
+
+
+<script>
+  var a_canvas = document.getElementById("a");
+  var context = canvas.getContext("2d");
+  var bianry = new Image();
+  binary.src = "images/binary.jfif";
+  binary.onload = function() {
+    context.drawImage(binary, 0, 0);
+  };
 </script>
+
+</script>
+
 
 
 
@@ -69,6 +97,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 <div id="content" class="w3-container">
 	<p>Content goes here.</p>
+	
+	<p> <canvas id="a" width="300" height="225"></canvas> </p>
 		
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
