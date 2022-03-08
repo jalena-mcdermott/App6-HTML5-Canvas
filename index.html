@@ -98,16 +98,18 @@ function draw_img() {
 <div id="content" class="w3-container">
 	<p>Canvas time!</p>
 	
-	<p> <center> <canvas id="a" width="300" height="225" style="border:1px solid #000000;"></canvas> </center> </p>
-	<script>
-		  var a_canvas = document.getElementById("a");
-  		var a_context = a.getContext("2d");
-		var gradient = context.createLinearGradient(0, 0, 300, 0);
-		gradient.addColorStop(0, "green");
-		gradient.addColorStop(1, "white");
-		context.fillStyle = gradient
-  		context.fillRect(50, 50, 150, 100);	
-	</script>
+	<p><canvas id="a" width="300" height="225" style="border:1px solid #000000;"></canvas></p>
+		<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+// Create gradient
+var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+</script>
 	
 	<a onclick="drawRect();" class="w3-btn w3-blue w3-round-xxlarge">Rectangle</a>
 	<a onclick="draw_name();" class="w3-btn w3-blue w3-round-xxlarge">my name</a>
