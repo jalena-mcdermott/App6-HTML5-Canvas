@@ -99,17 +99,17 @@ function draw_img() {
 	<p>Canvas time!</p>
 	
 	<p><canvas id="a" width="300" height="225" style="border:1px solid #000000;"></canvas></p>
-		<script>
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-// Create gradient
-var grd = ctx.createLinearGradient(0,0,200,0);
-grd.addColorStop(0,"red");
-grd.addColorStop(1,"white");
-// Fill with gradient
-ctx.fillStyle = grd;
-ctx.fillRect(10,10,150,80);
-</script>
+	
+	<script> 
+	function drawRect() {
+  	var a = document.getElementById("a");
+  	var context = a.getContext("2d");
+	var gradient = context.createLinearGradient(0, 0, 300, 0);
+		gradient.addColorStop(0, "green");
+		gradient.addColorStop(1, "blue");
+  		context.fillRect(50, 25, 150, 100);	
+	}
+	</script>
 	
 	<a onclick="drawRect();" class="w3-btn w3-blue w3-round-xxlarge">Rectangle</a>
 	<a onclick="draw_name();" class="w3-btn w3-blue w3-round-xxlarge">my name</a>
