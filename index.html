@@ -107,8 +107,13 @@ function draw_img() {
 	var gradient = context.createRadialGradient(75, 50, 5, 90, 60, 100);
 		gradient.addColorStop(0, "blue");
 		gradient.addColorStop(1, "white");
+		context.fillStyle = gradient
   		context.fillRect(50, 25, 150, 100);	
 	}
+
+	</script>
+	
+	<script>
 	
 	function drawName() {
 	var a = document.getElementById("a");
