@@ -104,11 +104,17 @@ function draw_img() {
 	function drawRect() {
   	var a = document.getElementById("a");
   	var context = a.getContext("2d");
-	var gradient = context.createRadialGradient(0, 0, 300, 0);
+	var gradient = context.createRadialGradient(75, 50, 5, 90, 60, 100);
 		gradient.addColorStop(0, "blue");
 		gradient.addColorStop(1, "white");
   		context.fillRect(50, 25, 150, 100);	
 	}
+	
+	function drawName() {
+	var a = document.getElementById("a");
+	var a = a.getContext("2d");
+		context.font = "bold 12px sans-serif";
+		context.fillText("Jalena", 248, 43);
 	</script>
 	
 	<a onclick="drawRect();" class="w3-btn w3-blue w3-round-xxlarge">Rectangle</a>
