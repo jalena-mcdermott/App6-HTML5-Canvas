@@ -104,9 +104,9 @@ function draw_img() {
 	function drawRect() {
   	var a = document.getElementById("a");
   	var context = a.getContext("2d");
-	var gradient = context.createLinearGradient(0, 0, 300, 0);
-		gradient.addColorStop(0, "green");
-		gradient.addColorStop(1, "blue");
+	var gradient = context.createRadialGradient(0, 0, 300, 0);
+		gradient.addColorStop(0, "blue");
+		gradient.addColorStop(1, "white");
   		context.fillRect(50, 25, 150, 100);	
 	}
 	</script>
