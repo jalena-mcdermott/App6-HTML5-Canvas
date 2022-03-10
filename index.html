@@ -82,7 +82,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		gradient.addColorStop(0, "purple");
 		gradient.addColorStop(1, "black");
 		context.fillStyle = gradient
-  		context.fillRect(50, 25, 150, 100);	
+  		context.fillRect(25, 25, 100, 75);	
 	}
 
 	</script>
@@ -93,7 +93,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		var a = document.getElementById("a");
 		var context = a.getContext("2d");
 		context.font = "30px Arial";
-		context.strokeText("Jalena", 150, 200);
+		context.strokeText("Jalena", 10 , 200);
 	}
 	</script>
 	
@@ -111,14 +111,14 @@ console.log("This file last modified " + docMod); // generates message in javaSc
  		 var img = new Image();
   			img.src = "codePicture.jpg";
   			img.onload = function() {
-  			context.drawImage(img, 100, 100, 100, 100);
+  			context.drawImage(img, 50, 50, 225, 50);
  		 };
 	}
 	</script>
 	
 	<center> 
 	<a onclick="drawRect();" class="w3-btn w3-blue w3-round-xxlarge">Rectangle</a>
-	<a onclick="drawName();" class="w3-btn w3-blue w3-round-xxlarge">my name</a>
+	<a onclick="drawName();" class="w3-btn w3-blue w3-round-xxlarge">My Name</a>
 	<a onclick="drawImg();" class="w3-btn w3-blue w3-round-xxlarge">Image</a>
 	<a onclick="clearCanvas();" class="w3-btn w3-blue w3-round-xxlarge">clear canvas</a>
 	</center>
