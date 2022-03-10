@@ -76,7 +76,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 	<script> // function that draws the rectangle
 	function drawRect() { // declares function so it can be called later
-  	var a = document.getElementById("a"); // puts rectangle on canvas with id "a"
+  	var a = document.getElementById("a"); // puts function on canvas with id "a"
   	var context = a.getContext("2d"); // draws 2d image on canvas
 	var gradient = context.createRadialGradient(75, 50, 5, 90, 60, 100); // creates a gradient for the rectangle
 		gradient.addColorStop(0, "purple"); // displays purple as the center color
@@ -87,40 +87,39 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 	</script>
 	
-	<script>
-	
-	function drawName() {
-		var a = document.getElementById("a");
-		var context = a.getContext("2d");
-		context.font = "30px Arial";
-		context.strokeText("Jalena", 10 , 200);
+	<script> // function that writes my name
+	function drawName() { // declares function so it can be called later
+		var a = document.getElementById("a"); // puts function on canvas with id "a"
+		var context = a.getContext("2d"); // draws 2d image on canvas
+		context.font = "30px Arial"; // declares font size and font 
+		context.strokeText("Jalena", 10 , 200); // final display of my name ("text", x, y) - no need for width and height because font size takes care of that
 	}
 	</script>
 	
-	<script>
-	function clearCanvas() {
-		var a = document.getElementById("a");
-		a.width = a.width; 
+	<script> // function that clears the canvas
+	function clearCanvas() { // declares function so it can be called later
+		var a = document.getElementById("a"); // puts function on canvas with id "a"
+		a.width = a.width; // sets clearing width equal to canvas width to clear entire canvas
 	}
 	</script>
 	
-	<script>
-	function drawImg() {
- 		 var a = document.getElementById("a");
- 		 var context = a.getContext("2d");
- 		 var img = new Image();
-  			img.src = "codePicture.jpg";
-  			img.onload = function() {
-  			context.drawImage(img, 175, 100, 100, 100);
+	<script> // functionn that uploads image to canvas
+	function drawImg() { // declares function so it can be called later
+ 		 var a = document.getElementById("a"); // puts function on canvas with id "a"
+ 		 var context = a.getContext("2d"); // draws 2d image on canvas
+ 		 var img = new Image(); // declares that a new image is being placed in canvas
+  			img.src = "codePicture.jpg"; // calls on image in file
+  			img.onload = function() { // new function for image upload
+  			context.drawImage(img, 175, 100, 100, 100); // final display of image onto canvas (img, x, y, width, height)
  		 };
 	}
 	</script>
 	
 	<center> 
-	<a onclick="drawRect();" class="w3-btn w3-blue w3-round-xxlarge">Rectangle</a>
-	<a onclick="drawName();" class="w3-btn w3-blue w3-round-xxlarge">My Name</a>
-	<a onclick="drawImg();" class="w3-btn w3-blue w3-round-xxlarge">Image</a>
-	<a onclick="clearCanvas();" class="w3-btn w3-blue w3-round-xxlarge">clear canvas</a>
+	<a onclick="drawRect();" class="w3-btn w3-blue w3-round-xxlarge">Rectangle</a> // button calls for rectangle to be added to canvas
+	<a onclick="drawName();" class="w3-btn w3-blue w3-round-xxlarge">My Name</a> // button calls for my name to be added to canvas
+	<a onclick="drawImg();" class="w3-btn w3-blue w3-round-xxlarge">Image</a> // button calls for image to be added to canvas
+	<a onclick="clearCanvas();" class="w3-btn w3-blue w3-round-xxlarge">clear canvas</a> // button calls for canvas to be cleared
 	</center>
 		
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
