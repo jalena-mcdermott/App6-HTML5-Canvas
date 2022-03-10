@@ -72,17 +72,17 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 <div id="content" class="w3-container">
 	<p>Canvas time!</p>
 	
-	<p><center><canvas id="a" width="300" height="225" style="border:1px solid #000000;"></center></canvas></p> <!-- declares canvas id "a", and the width, height, and boarder style of the canvas-->
+	<p><center><canvas id="a" width="300" height="225" style="border:1px solid #000000;"></center></canvas></p> <!-- declares canvas id "a" and the width, height, and boarder style of the canvas-->
 	
-	<script> 
-	function drawRect() {
-  	var a = document.getElementById("a");
-  	var context = a.getContext("2d");
-	var gradient = context.createRadialGradient(75, 50, 5, 90, 60, 100);
-		gradient.addColorStop(0, "purple");
-		gradient.addColorStop(1, "black");
-		context.fillStyle = gradient
-  		context.fillRect(25, 25, 125, 100);	
+	<script> // function that draws the rectangle
+	function drawRect() { // declares function so it can be called later
+  	var a = document.getElementById("a"); // puts rectangle on canvas with id "a"
+  	var context = a.getContext("2d"); // draws 2d image on canvas
+	var gradient = context.createRadialGradient(75, 50, 5, 90, 60, 100); // creates a gradient for the rectangle
+		gradient.addColorStop(0, "purple"); // displays purple as the center color
+		gradient.addColorStop(1, "black"); // displays black as outer color
+		context.fillStyle = gradient //fills rectangle with created gradient
+  		context.fillRect(25, 25, 125, 100); // final display for rectangle (x, y, width, height)	
 	}
 
 	</script>
