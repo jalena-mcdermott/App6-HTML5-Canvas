@@ -42,32 +42,6 @@ alert("This file last modified " + docMod); // generates alert box with time sta
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 </script>	
 
-<script> 
-function drawRect() {
-  	var a = document.getElementById("a");
-  	var context = a.getContext("2d");
-	var gradient = context.createLinearGradient(0, 0, 300, 0);
-		gradient.addColorStop(0, "green");
-		gradient.addColorStop(1, "blue");
-  		context.fillRect(50, 25, 150, 100);	
-}
-	
-function draw_name() {
-	var a_canvas = document.getElementById("a");
-	var a_context = a_canvas.getContext("2d");
-		context.font = "bold 12px sans-serif";
-		context.fillText("Jalena", 248, 43);
-}
-function draw_img() {
-  var a_canvas = document.getElementById("a");
-  var context = canvas.getContext("2d");
-  var bianry = new Image();
-  	binary.src = "images/binary.jfif";
-  	binary.onload = function() {
-    context.drawImage(binary, 0, 0);
-  };
-</script>
-
 
 
 <style>	
@@ -105,7 +79,7 @@ function draw_img() {
   	var a = document.getElementById("a");
   	var context = a.getContext("2d");
 	var gradient = context.createRadialGradient(75, 50, 5, 90, 60, 100);
-		gradient.addColorStop(0, "blue");
+		gradient.addColorStop(0, "purple");
 		gradient.addColorStop(1, "black");
 		context.fillStyle = gradient
   		context.fillRect(50, 25, 150, 100);	
@@ -134,7 +108,7 @@ function draw_img() {
 	function drawImg() {
  		 var a = document.getElementById("a");
  		 var context = a.getContext("2d");
- 		 var bianry = new Image();
+ 		 var codePicture = new Image();
   			img.src = "codePicture.jpg";
   			img.onload = function() {
   			context.drawImage(img, 0, 0, 100,100);
