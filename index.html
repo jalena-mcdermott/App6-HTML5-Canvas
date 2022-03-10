@@ -120,24 +120,26 @@ function draw_img() {
 		var context = b.getContext("2d");
 		context.font = "30px Arial";
 		context.strokeText("Jalena", 10, 50);
-
+	}
 	</script>
 	
 	<script>
 	function clearCanvas() {
-		var c = document.getElementById("a");
-		c.width = c.width;
+		var a = document.getElementById("a");
+		a.width = a.width; 
+	}
 	</script>
 	
 	<script>
 	function drawImg() {
- 		 var d = document.getElementById("a");
- 		 var context = d.getContext("2d");
+ 		 var a = document.getElementById("a");
+ 		 var context = a.getContext("2d");
  		 var bianry = new Image();
   			img.src = "codePicture.jpg";
   			img.onload = function() {
   			context.drawImage(img, 0, 0, 100,100);
-  };
+ 		 };
+	}
 	</script>
 	
 	<center> 
