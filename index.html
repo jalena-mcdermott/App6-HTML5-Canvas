@@ -134,15 +134,16 @@ function draw_img() {
  		 var d = document.getElementById("a");
  		 var context = d.getContext("2d");
  		 var bianry = new Image();
-  			binary.src = "images/binary.jfif";
-  			binary.onload = function() {
-  			context.drawImage(binary, 0, 0);
+  			img.src = "codePicture.jpg";
+  			img.onload = function() {
+  			context.drawImage(img, 0, 0, 100,100);
   };
 	</script>
 	
 	<center> 
 	<a onclick="drawRect();" class="w3-btn w3-blue w3-round-xxlarge">Rectangle</a>
 	<a onclick="drawName();" class="w3-btn w3-blue w3-round-xxlarge">my name</a>
+	<a onclick="drawImg();" class="w3-btn w3-blue w3-round-xxlarge">Image</a>
 	<a onclick="clearCanvas();" class="w3-btn w3-blue w3-round-xxlarge">clear canvas</a>
 	</center>
 		
